@@ -80,8 +80,10 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Views\Curso_Tema_Video\CursoTemaVideoCreate.aspx" />
     <Content Include="Views\Curso_Tema_Video\CursoTemaVideoDelete.aspx" />
     <Content Include="Views\Curso_Tema_Video\CursoTemaVideoDetails.aspx" />
+    <Content Include="Views\Curso_Tema_Video\CursoTemaVideoEdit.aspx" />
     <Content Include="Views\Curso_Tema_Video\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Web.config" />
