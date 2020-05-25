@@ -8,6 +8,7 @@
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <form id="form1" runat="server">
     <% using (Html.BeginForm()) {%>
         <%: Html.ValidationSummary(true) %>
 
@@ -24,13 +25,12 @@
             </div>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.idVideo) %>
+               Video:
             </div>
-            <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.idVideo) %>
-                <%: Html.ValidationMessageFor(model => model.idVideo) %>
+            <div class="editor-field">               
+                <%: Html.ValidationMessageFor(model => model.idVideo) %>                
+               <%: Html.DropDownListFor(model => model.idVideo, (SelectList)ViewData["videos"],"Seleccionar") %>                
             </div>
-            
             <p>
                 <input type="submit" class="button" value="Agregar" />
             </p>
@@ -41,6 +41,8 @@
     <div>
         <%: Html.ActionLink("Regresar", "Index") %>
     </div>
+
+    </form>
 
 </body>
 </html>

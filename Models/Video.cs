@@ -5,16 +5,16 @@ using System.Web;
 using System.Web.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
-using MVCLaboratorio.Utilerias;
-using System.Data;
 
 namespace MVCLaboratorio.Models
 {
-    public class Curso_Tema_Video
+    public class Video
     {
-        public int idCTV { get; set; }
-        public int idCT { get; set; }
-        public int idVideo { get; set; }     
-      
+        public int IdVideo { get; set; }
+        public string Nombre { get; set; }
+        public string Url { get; set; }
+        public DateTime FechaPublicacion { get; set; }
+
+       
     }
 }

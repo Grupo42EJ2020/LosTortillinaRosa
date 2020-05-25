@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MVCLaboratorio.Models;
+using MVCLaboratorio.Utilerias;
+using System.Data;
 
 namespace MVCLaboratorio.Controllers
 {
@@ -11,10 +13,10 @@ namespace MVCLaboratorio.Controllers
     {
         //
         // GET: /Curso_Tema_Video/
-        RepositorioCurso_Tema_Video repoCurso = new RepositorioCurso_Tema_Video();  
-
+        RepositorioCurso_Tema_Video repoCurso = new RepositorioCurso_Tema_Video();
+        RepositorioVideo repoVideo = new RepositorioVideo();
         public ActionResult Index()
-        {
+        {           
             return View(repoCurso.obtenerCursoTemaVideo());
         }
 
@@ -52,11 +54,12 @@ namespace MVCLaboratorio.Controllers
 
             return RedirectToAction("Index");
         }
-
+        
         public ActionResult CursoTemaVideoCreate()
         {
+            ViewData["videos"] = new SelectList(repoVideo.obtenerVideos(), "IdVideo", "Nombre");            
             //mostrar interfaz para llenado
-            return View();
+            return this.View();
         }
 
         [HttpPost]
