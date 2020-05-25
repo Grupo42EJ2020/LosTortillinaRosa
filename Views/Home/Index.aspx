@@ -13,6 +13,7 @@
     </h1>
 
     <a href="/Curso_Tema_Video/Index">Curso Tema Video</a>
-
+    <br />  
+    <a href="/Cuso_Tema/Index">Curso_Tema</a>
 </body>
 </html>
