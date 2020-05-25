@@ -10,7 +10,7 @@ namespace MVCLaboratorio.Models
 {
     public class RepositorioCurso_Tema : Curso_Tema
     {
-        public List<Curso_Tema> obtenerCurso()
+        public List<Curso_Tema> obtenerCursoTema()
         {
             //implementar funcionalidad
             //obtener la info de los videos de la BD
@@ -85,10 +85,6 @@ namespace MVCLaboratorio.Models
             parametros.Add(new SqlParameter("@idVideo", datosCursoTema.idTema));
             BaseHelper.ejecutarConsulta("sp_Curso_Tema_Video_Actualizar", CommandType.StoredProcedure, parametros);
         }
-
-        internal object obtenerCursoTema()
-        {
-            throw new NotImplementedException();
-        }
+    
     }
 }
