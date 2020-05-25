@@ -14,33 +14,20 @@
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="demo">
-
-
 		<div id="loader-wrapper">
 			<div id="loader"></div>
-
 			<div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
-
 		</div>
-
 		<div id="content">
 			   <h1>
     PIA 👍
     </h1>
     <a href="/Curso_Tema_Video/Index">Curso Tema Video</a>
-
-		</div>
-
-	
-	<!-- /Demo content -->
-    
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"  ></script>
-        
+  <a href="/Curso_Tema/Index">Curso Tema</a>
+		</div>    
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"  ></script>        
         <script type="text/javascript">            window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>') </script>
-
-        <script src="../../Scripts/main.js" type="text/javascript"></script>
-
-
+        <script src="../../Scripts/main.js" type="text/javascript"></script> <br />  
 </body>
 </html>
