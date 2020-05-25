@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>CusoTemaIndex</title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <table>
@@ -25,9 +26,9 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Edit", "Edit", new {  id=item.idCT }) %> |
-                <%: Html.ActionLink("Details", "Details", new {id=item.idCT })%> |
-                <%: Html.ActionLink("Delete", "Delete", new { id=item.idCT })%>
+                <%: Html.ActionLink("Editar", "CursoTemaEdit", new {  id=item.idCT }) %> |
+                <%: Html.ActionLink("Detalles", "CursoTemaDetails", new { id = item.idCT })%> |
+                <%: Html.ActionLink("Eliminar", "CursoTemaDelete", new { id = item.idCT })%>
             </td>
             <td>
                 <%: item.idCT %>

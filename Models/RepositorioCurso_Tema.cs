@@ -10,7 +10,7 @@ namespace MVCLaboratorio.Models
 {
     public class RepositorioCurso_Tema : Curso_Tema
     {
-        public List<Curso_Tema> obtenerCurso()
+        public List<Curso_Tema> obtenerCurso_Tema()
         {
             //implementar funcionalidad
             //obtener la info de los videos de la BD
@@ -37,7 +37,7 @@ namespace MVCLaboratorio.Models
         {
             DataTable dtVideo;
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@idCTV", id));
+            parametros.Add(new SqlParameter("@IdCT", id));
 
             dtVideo = BaseHelper.ejecutarConsulta("sp_Curso_Tema_ConsultarPorID", CommandType.StoredProcedure, parametros);
 
@@ -47,7 +47,7 @@ namespace MVCLaboratorio.Models
             if (dtVideo.Rows.Count > 0) //si lo encontro
             {
                 datosCursoTema.idCT = int.Parse(dtVideo.Rows[0]["idCT"].ToString());
-                datosCursoTema.idCurso = int.Parse(dtVideo.Rows[0]["idCuso"].ToString());
+                datosCursoTema.idCurso = int.Parse(dtVideo.Rows[0]["idCurso"].ToString());
                 datosCursoTema.idTema = int.Parse(dtVideo.Rows[0]["idTema"].ToString());
 
                 return datosCursoTema;
@@ -62,8 +62,8 @@ namespace MVCLaboratorio.Models
         {
             //realizar el update
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@idCuso", datosCursoTema.idCurso));
-            parametros.Add(new SqlParameter("@idTema", datosCursoTema.idTema));
+            parametros.Add(new SqlParameter("@IdCurso", datosCursoTema.idCurso));
+            parametros.Add(new SqlParameter("@IdTema", datosCursoTema.idTema));
             BaseHelper.ejecutarConsulta("sp_Curso_Tema_Insertar", CommandType.StoredProcedure, parametros);
 
         }
@@ -71,7 +71,7 @@ namespace MVCLaboratorio.Models
         public void eliminarCursoTema(int id)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@idCT", id));
+            parametros.Add(new SqlParameter("@IdCT", id));
             BaseHelper.ejecutarSentencia("sp_Curso_Tema_Eliminar", CommandType.StoredProcedure, parametros);
 
         }
@@ -80,15 +80,11 @@ namespace MVCLaboratorio.Models
         {
             //realizar el update
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@idCTV", datosCursoTema.idCT));
-            parametros.Add(new SqlParameter("@idCT", datosCursoTema.idCurso));
-            parametros.Add(new SqlParameter("@idVideo", datosCursoTema.idTema));
-            BaseHelper.ejecutarConsulta("sp_Curso_Tema_Video_Actualizar", CommandType.StoredProcedure, parametros);
+            parametros.Add(new SqlParameter("@IdCT", datosCursoTema.idCT));
+            parametros.Add(new SqlParameter("@IdCurso", datosCursoTema.idCurso));
+            parametros.Add(new SqlParameter("@IdTema", datosCursoTema.idTema));
+            BaseHelper.ejecutarConsulta("sp_Curso_Tema_Actualizar", CommandType.StoredProcedure, parametros);
         }
 
-        internal object obtenerCursoTema()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

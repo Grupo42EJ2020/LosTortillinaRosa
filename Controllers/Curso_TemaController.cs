@@ -12,36 +12,36 @@ namespace MVCLaboratorio.Controllers
         //
         // GET: /Curso_Tema/
 
-        RepositorioCurso_Tema repoCurso = new RepositorioCurso_Tema();
+        RepositorioCurso_Tema repoCurso_Tema = new RepositorioCurso_Tema();
 
         public ActionResult Index()
         {
-            return View(repoCurso.obtenerCursoTema());
+            return View(repoCurso_Tema.obtenerCurso_Tema());
         }
 
         //Metodo para borrar un video
         public ActionResult CursoTemaDelete(int id)
         {
             //obtener los datos del video para mostrarlo al usuario antes de borrarlo
-            return View(repoCurso.obtenerCursoTema(id));
+            return View(repoCurso_Tema.obtenerCursoTema(id));
         }
 
         [HttpPost]
         public ActionResult CursoTemaDelete(int id, FormCollection datos)
         {
             //realizar el delete del registro
-            repoCurso.eliminarCursoTema(id);
+            repoCurso_Tema.eliminarCursoTema(id);
             return RedirectToAction("Index");
         }
 
         public ActionResult CursoTemaDetails(int id)
         {
-            return View(repoCurso.obtenerCursoTema(id));
+            return View(repoCurso_Tema.obtenerCursoTema(id));
         }
 
         public ActionResult CursoTemaEdit(int id)
         {
-            return View(repoCurso.obtenerCursoTema(id));
+            return View(repoCurso_Tema.obtenerCursoTema(id));
         }
 
 
@@ -49,7 +49,7 @@ namespace MVCLaboratorio.Controllers
         public ActionResult CursoTemaEdit(int id, Curso_Tema_Video datosCurso)
         {
             datosCurso.idCTV = id;
-            repoCurso.actualizarCursoTema(datosCursoTema);
+            repoCurso_Tema.actualizarCursoTema(datosCursoTema);
 
             return RedirectToAction("Index");
         }
@@ -63,7 +63,7 @@ namespace MVCLaboratorio.Controllers
         [HttpPost]
         public ActionResult CursoTemaVideoCreate(Curso_Tema datos)
         {
-            repoCurso.insertarCursoTema(datos);
+            repoCurso_Tema.insertarCursoTema(datos);
             return RedirectToAction("Index");
         }
 
