@@ -46,7 +46,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Create New", "CursoTemaCreate") %>
+        <%: Html.ActionLink("Agregar", "CursoTemaCreate") %>
     </p>
 
 </body>
