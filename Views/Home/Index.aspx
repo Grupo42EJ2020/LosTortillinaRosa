@@ -27,6 +27,7 @@
     <a href="/Empleado/Index">Empleados</a>
     <a href="/Curso_Tema_Video/Index">Curso Tema Video</a>
   <a href="/Curso_Tema/Index">Curso Tema</a>
+  <a href="/Tema/Temas">Tema</a>
 		</div>    
 =======
 		
