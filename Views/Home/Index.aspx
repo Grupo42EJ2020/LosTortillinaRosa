@@ -23,6 +23,7 @@
 			   <h1>
     PIA 👍
     </h1>
+    <a href="/Empleado/Index">Empleados</a>
     <a href="/Curso_Tema_Video/Index">Curso Tema Video</a>
   <a href="/Curso_Tema/Index">Curso Tema</a>
 		</div>    

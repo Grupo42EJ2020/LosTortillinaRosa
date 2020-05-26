@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="Controllers\Curso_TemaController.cs" />
     <Compile Include="Controllers\Curso_Tema_VideoController.cs" />
+    <Compile Include="Controllers\EmpleadoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\VideoController.cs" />
     <Compile Include="Global.asax.cs">
@@ -75,11 +76,14 @@
     </Compile>
     <Compile Include="Models\Curso_Tema.cs" />
     <Compile Include="Models\Curso_Tema_Video.cs" />
+    <Compile Include="Models\Empleado.cs" />
     <Compile Include="Models\ICurso_Tema.cs" />
     <Compile Include="Models\ICurso_Tema_Video.cs" />
+    <Compile Include="Models\IEmpleado.cs" />
     <Compile Include="Models\IVideo.cs" />
     <Compile Include="Models\RepositorioCurso_Tema.cs" />
     <Compile Include="Models\RepositorioCurso_Tema_Video.cs" />
+    <Compile Include="Models\RepositorioEmpleado.cs" />
     <Compile Include="Models\RepositorioVideo.cs" />
     <Compile Include="Models\Video.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,6 +106,11 @@
     <Content Include="Views\Curso_Tema_Video\CursoTemaVideoDetails.aspx" />
     <Content Include="Views\Curso_Tema_Video\CursoTemaVideoEdit.aspx" />
     <Content Include="Views\Curso_Tema_Video\Index.aspx" />
+    <Content Include="Views\Empleado\EmpleadoCreate.aspx" />
+    <Content Include="Views\Empleado\EmpleadoDelete.aspx" />
+    <Content Include="Views\Empleado\EmpleadoDetails.aspx" />
+    <Content Include="Views\Empleado\EmpleadoEdit.aspx" />
+    <Content Include="Views\Empleado\Index.aspx" />
     <Content Include="Views\Home\Carga.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Web.config" />
