@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CursoController.cs" />
     <Compile Include="Controllers\TemaController.cs" />
     <Compile Include="Controllers\Curso_TemaController.cs" />
     <Compile Include="Controllers\Curso_Tema_VideoController.cs" />
@@ -75,6 +76,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Curso.cs" />
+    <Compile Include="Models\ICursocs.cs" />
+    <Compile Include="Models\RepositorioCurso.cs" />
     <Compile Include="Models\RepositorioTema.cs" />
     <Compile Include="Models\ITema.cs" />
     <Compile Include="Models\Tema.cs" />
@@ -100,6 +104,11 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\main.js" />
+    <Content Include="Views\Curso\CursoCreate.aspx" />
+    <Content Include="Views\Curso\CursoDelete.aspx" />
+    <Content Include="Views\Curso\CursoDetails.aspx" />
+    <Content Include="Views\Curso\CursoEdit.aspx" />
+    <Content Include="Views\Curso\Index.aspx" />
     <Content Include="Views\Curso_Tema\CursoTemaCreate.aspx" />
     <Content Include="Views\Curso_Tema\CursoTemaDelete.aspx" />
     <Content Include="Views\Curso_Tema\CursoTemaDetails.aspx" />
