@@ -18,24 +18,11 @@
 			<div id="loader"></div>
 			<div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
-		</div>
-<<<<<<< HEAD
-		<div id="content">
-			   <h1>
-    PIA 👍
-    </h1>
-    <a href="/Empleado/Index">Empleados</a>
-    <a href="/Curso_Tema_Video/Index">Curso Tema Video</a>
-  <a href="/Curso_Tema/Index">Curso Tema</a>
-  <a href="/Tema/Temas">Tema</a>
-		</div>    
-=======
-		
+		</div>	  		
         <div class="container">
  <h1>
     <a href="#menu">Opciones</a>
- </h1>
-    
+ </h1>    
 <div class="popover" id="menu">
  <div class = 'content'>
   <a href="#" class="close"></a>
@@ -43,14 +30,13 @@
     <ul class = 'nav_list'>
 	  <li> <a href="/Curso_Tema_Video/Index">Curso Tema Video</a></li>
 		<li><a href="/Curso_Tema/Index">Curso Tema</a></li>
-   
-      
+   <li> <a href="/Tema/Temas">Tema</a></li>
+      <li> <a href="/Empleado/Index">Empleados</a></li>   
 	</ul>
   </div>
  </div>
  </div>
- </div> 	    
->>>>>>> 93a7b5e6b62d72e0d6e645ccb7a53667689fbdbc
+ </div> 
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"  ></script>        
         <script type="text/javascript">            window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>') </script>
         <script src="../../Scripts/main.js" type="text/javascript"></script> <br />  
