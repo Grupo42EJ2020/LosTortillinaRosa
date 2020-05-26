@@ -8,9 +8,12 @@ using System.Data.SqlClient;
 
 namespace MVCLaboratorio.Models
 {
-    public class RepositorioCurso_Tema : Curso_Tema
+    public class RepositorioCurso_Tema : ICurso_Tema
     {
-        public List<Curso_Tema> obtenerCurso_Tema()
+
+
+        public List<Curso_Tema> obtenerCursoTema()
+
         {
             //implementar funcionalidad
             //obtener la info de los videos de la BD
@@ -85,6 +88,5 @@ namespace MVCLaboratorio.Models
             parametros.Add(new SqlParameter("@IdTema", datosCursoTema.idTema));
             BaseHelper.ejecutarConsulta("sp_Curso_Tema_Actualizar", CommandType.StoredProcedure, parametros);
         }
-
     }
 }

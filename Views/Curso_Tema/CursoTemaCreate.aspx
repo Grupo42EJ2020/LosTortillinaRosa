@@ -12,15 +12,7 @@
         <%: Html.ValidationSummary(true) %>
 
         <fieldset>
-            <legend>Fields</legend>
-            
-            <div class="editor-label">
-                <%: Html.LabelFor(model => model.idCT) %>
-            </div>
-            <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.idCT) %>
-                <%: Html.ValidationMessageFor(model => model.idCT) %>
-            </div>
+            <legend>Fields</legend>       
             
             <div class="editor-label">
                 <%: Html.LabelFor(model => model.idCurso) %>
@@ -39,7 +31,7 @@
             </div>
             
             <p>
-                <input type="submit" value="Create" />
+                <input type="submit" class="button" value="Agregar" />
             </p>
         </fieldset>
 

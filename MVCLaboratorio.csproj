@@ -92,7 +92,7 @@
   <ItemGroup>
     <Content Include="Content\main.css" />
     <Content Include="Content\normalize.css" />
-    <Content Include="Content\StyleSheet1.css" />
+    <Content Include="Content\StyleSheet2.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\main.js" />
@@ -106,12 +106,15 @@
     <Content Include="Views\Curso_Tema_Video\CursoTemaVideoDetails.aspx" />
     <Content Include="Views\Curso_Tema_Video\CursoTemaVideoEdit.aspx" />
     <Content Include="Views\Curso_Tema_Video\Index.aspx" />
+<<<<<<< HEAD
     <Content Include="Views\Empleado\EmpleadoCreate.aspx" />
     <Content Include="Views\Empleado\EmpleadoDelete.aspx" />
     <Content Include="Views\Empleado\EmpleadoDetails.aspx" />
     <Content Include="Views\Empleado\EmpleadoEdit.aspx" />
     <Content Include="Views\Empleado\Index.aspx" />
     <Content Include="Views\Home\Carga.aspx" />
+=======
+>>>>>>> 93a7b5e6b62d72e0d6e645ccb7a53667689fbdbc
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

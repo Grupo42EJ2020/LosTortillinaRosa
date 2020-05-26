@@ -16,7 +16,7 @@ namespace MVCLaboratorio.Controllers
 
         public ActionResult Index()
         {
-            return View(repoCurso_Tema.obtenerCurso_Tema());
+            return View(repoCurso_Tema.obtenerCursoTema());
         }
 
         //Metodo para borrar un video
@@ -46,9 +46,9 @@ namespace MVCLaboratorio.Controllers
 
 
         [HttpPost]
-        public ActionResult CursoTemaEdit(int id, Curso_Tema_Video datosCurso)
+        public ActionResult CursoTemaEdit(int id, Curso_Tema datosCursoTema)
         {
-            datosCurso.idCTV = id;
+            datosCursoTema.idCT = id;
             repoCurso_Tema.actualizarCursoTema(datosCursoTema);
 
             return RedirectToAction("Index");
@@ -61,13 +61,10 @@ namespace MVCLaboratorio.Controllers
         }
 
         [HttpPost]
-        public ActionResult CursoTemaVideoCreate(Curso_Tema datos)
+        public ActionResult CursoTemaCreate(Curso_Tema datos)
         {
             repoCurso_Tema.insertarCursoTema(datos);
             return RedirectToAction("Index");
-        }
-
-
-        public Curso_Tema datosCursoTema { get; set; }
+        }      
     }
 }

@@ -9,7 +9,7 @@
 </head>
 <body>
     <fieldset>
-        <legend>Fields</legend>
+        <legend>Informacion </legend>
         
         <div class="display-label">idCT</div>
         <div class="display-field"><%: Model.idCT %></div>

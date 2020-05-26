@@ -11,7 +11,7 @@
     <link href="../../Content/normalize.css" rel="stylesheet" type="text/css" />
     <link href="../../Content/main.css" rel="stylesheet" type="text/css" />
    <script src="../../Scripts/modernizr-2.6.2.min.js" type="text/javascript"></script>
-    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/StyleSheet2.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="demo">
 		<div id="loader-wrapper">
@@ -19,6 +19,7 @@
 			<div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
 		</div>
+<<<<<<< HEAD
 		<div id="content">
 			   <h1>
     PIA 👍
@@ -27,6 +28,28 @@
     <a href="/Curso_Tema_Video/Index">Curso Tema Video</a>
   <a href="/Curso_Tema/Index">Curso Tema</a>
 		</div>    
+=======
+		
+        <div class="container">
+ <h1>
+    <a href="#menu">Opciones</a>
+ </h1>
+    
+<div class="popover" id="menu">
+ <div class = 'content'>
+  <a href="#" class="close"></a>
+   <div class = 'nav'>
+    <ul class = 'nav_list'>
+	  <li> <a href="/Curso_Tema_Video/Index">Curso Tema Video</a></li>
+		<li><a href="/Curso_Tema/Index">Curso Tema</a></li>
+   
+      
+	</ul>
+  </div>
+ </div>
+ </div>
+ </div> 	    
+>>>>>>> 93a7b5e6b62d72e0d6e645ccb7a53667689fbdbc
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"  ></script>        
         <script type="text/javascript">            window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>') </script>
         <script src="../../Scripts/main.js" type="text/javascript"></script> <br />  
