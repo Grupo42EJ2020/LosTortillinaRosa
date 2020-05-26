@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>TemaEdit</title>
+    <title>Tema Editar</title>
 </head>
 <body>
 <% using (Html.BeginForm()) {%>

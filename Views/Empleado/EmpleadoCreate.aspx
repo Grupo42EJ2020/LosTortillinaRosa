@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>EmpleadoCreate</title>
+    <title>Empleado Agregar</title>
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -31,7 +31,7 @@
             </div>
             
             <p>
-                <input type="submit" class="button" value="Agregar Nuevo Empleado" />
+                <input type="submit" class="button" value="Agregar" />
             </p>
         </fieldset>
 

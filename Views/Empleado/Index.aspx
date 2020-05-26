@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>EmpleadoIndex</title>
+    <title>Empleado</title>
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -41,6 +41,7 @@
 
     <p>
         <%: Html.ActionLink("Agregar Nuevo Empleado", "EmpleadoCreate") %>
+             <%: Html.ActionLink("Regresar", "Index","Home")%>
     </p>
 </body>
 </html>

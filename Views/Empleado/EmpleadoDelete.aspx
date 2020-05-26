@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>EmpleadoDelete</title>
+    <title>Empleado Borrar</title>
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -24,7 +24,7 @@
     </fieldset>
     <% using (Html.BeginForm()) { %>
         <p>
-		    <input type="submit" class="button" value="Eliminar Empleado" /> |
+		    <input type="submit" class="button" value="Eliminar" /> |
 		    <%: Html.ActionLink("Regresar", "Index") %>
         </p>
     <% } %>

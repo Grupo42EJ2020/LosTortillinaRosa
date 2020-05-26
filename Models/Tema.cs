@@ -9,6 +9,5 @@ namespace MVCLaboratorio.Models
     {
         public int IdTema { get; set; }
         public String Nombre { get; set; }
-
     }
 }

@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>CursoTemaVideoDelete</title>
+    <title>Curso Tema Video Borrar</title>
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
         <style type="text/css">   
         

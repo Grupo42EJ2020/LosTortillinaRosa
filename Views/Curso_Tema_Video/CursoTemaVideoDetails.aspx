@@ -43,7 +43,7 @@ a:active,.button:active {
     0 3px 14px 2px rgba(0, 0, 0, 0.12);
   background-color: #2086c9;
 }</style>
-    <title>CursoTemaVideoDetails</title>
+    <title>Curso Tema Video Detalles</title>
 </head>
 <body>
     <fieldset>

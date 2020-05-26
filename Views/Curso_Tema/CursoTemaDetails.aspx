@@ -4,12 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>CursoTemaDetails</title>
+    <title>Curso Tema Detalles</title>
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <fieldset>
-        <legend>Informacion </legend>
+        <legend>Informacion</legend>
         
         <div class="display-label">idCT</div>
         <div class="display-field"><%: Model.idCT %></div>

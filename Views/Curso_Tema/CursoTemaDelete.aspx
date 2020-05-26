@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>CursoTemaDelete</title>
+    <title>Curso Tema Borrar</title>
      <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -24,7 +24,7 @@
     </fieldset>
     <% using (Html.BeginForm()) { %>
         <p>
-		    <input type="submit" value="Delete" /> |
+		    <input type="submit" value="Borrar" /> |
 		    <%: Html.ActionLink("Regresar", "Index") %>
         </p>
     <% } %>

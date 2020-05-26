@@ -4,14 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>TemaCreate</title>
+    <title>Tema Agregar</title>
 </head>
 <body>
     <% using (Html.BeginForm()) {%>
         <%: Html.ValidationSummary(true) %>
 
         <fieldset>
-            <legend>Fields</legend>
+            <legend>Informacion</legend>
             
             
             
@@ -24,7 +24,7 @@
             </div>
             
             <p>
-                <input type="submit" value="Create" />
+                <input type="submit" value="Agregar" />
             </p>
         </fieldset>
 

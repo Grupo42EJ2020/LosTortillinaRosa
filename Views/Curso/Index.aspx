@@ -4,10 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>CursoIndex</title>
+    <title>Curso</title>
      <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <h1>Curso</h1>
+    <br />
     <table>
         <tr>
             <th></th>
@@ -47,6 +49,7 @@
 
     <p>
         <%: Html.ActionLink("Crear nuevo", "CursoCreate") %>
+             <%: Html.ActionLink("Regresar", "Index","Home")%>
     </p>
 
 </body>

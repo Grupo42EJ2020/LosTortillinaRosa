@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>CursoDetails</title>
+    <title>Curso Detalles</title>
      <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -22,7 +22,7 @@
         
     </fieldset>
     <p>
-        <%: Html.ActionLink("Edit", "CursoEdit", new {  id=Model.idCurso}) %> |
+        <%: Html.ActionLink("Editar", "CursoEdit", new {  id=Model.idCurso}) %> |
         <%: Html.ActionLink("Regresar", "Index") %>
     </p>
 

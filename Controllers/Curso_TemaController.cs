@@ -13,6 +13,8 @@ namespace MVCLaboratorio.Controllers
         // GET: /Curso_Tema/
 
         RepositorioCurso_Tema repoCurso_Tema = new RepositorioCurso_Tema();
+        RepositorioTema repoTema = new RepositorioTema();
+        RepositorioCurso repoCurso = new RepositorioCurso();
 
         public ActionResult Index()
         {
@@ -41,6 +43,8 @@ namespace MVCLaboratorio.Controllers
 
         public ActionResult CursoTemaEdit(int id)
         {
+            ViewData["Curso"] = new SelectList(repoCurso.obtenerCurso(), "idCurso", "Descripcion"); 
+            ViewData["Tema"] = new SelectList(repoTema.obtenerTema(), "idTema", "nombre"); 
             return View(repoCurso_Tema.obtenerCursoTema(id));
         }
 
@@ -56,6 +60,8 @@ namespace MVCLaboratorio.Controllers
 
         public ActionResult CursoTemaCreate()
         {
+            ViewData["Curso"] = new SelectList(repoCurso.obtenerCurso(), "idCurso", "Descripcion"); 
+            ViewData["Tema"] = new SelectList(repoTema.obtenerTema(), "idTema", "nombre");          
             //mostrar interfaz para llenado
             return View();
         }

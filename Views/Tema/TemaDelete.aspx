@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>TemaDelete</title>
+    <title>Tema Borrar</title>
 </head>
 <body>
     <h3>¿Esta seguro de eliminar la siguiente información?</h3>

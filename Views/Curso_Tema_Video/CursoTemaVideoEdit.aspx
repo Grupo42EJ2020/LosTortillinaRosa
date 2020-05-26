@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server"  background= "radial-gradient(ellipse at center, #343436 0%,#1d1f20 100%);">
-    <title>CursoTemaVideoEdit</title>
+    <title>Curso Tema Video Editar</title>
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
         <style type="text/css">   
         
@@ -50,7 +50,7 @@ a:active,.button:active {
         <%: Html.ValidationSummary(true) %>
         
         <fieldset>
-            <legend>Fields</legend>            
+            <legend>Informacion</legend>            
             
             <div class="editor-label">
                 <%: Html.LabelFor(model => model.idCT) %>

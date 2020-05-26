@@ -32,10 +32,7 @@
 		<li><a href="/Curso_Tema/Index">Curso Tema</a></li>
    <li> <a href="/Tema/Temas">Tema</a></li>
       <li> <a href="/Empleado/Index">Empleados</a></li>   
-<<<<<<< HEAD
-=======
       <li><a href="/Curso/Index">Curso</a></li>
->>>>>>> 36ef1024a46e7f8d0419e954b714206f21d386fd
 	</ul>
   </div>
  </div>

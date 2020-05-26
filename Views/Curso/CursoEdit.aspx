@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>CursoEdit</title>
+    <title>Curso Editar</title>
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -23,15 +23,15 @@
             </div>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.idEmpleado) %>
+            Empleado:
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.idEmpleado) %>
+                 <%: Html.DropDownListFor(model => model.idEmpleado, (SelectList)ViewData["Empleado"], "Seleccionar")%>
                 <%: Html.ValidationMessageFor(model => model.idEmpleado) %>
             </div>
             
             <p>
-                <input type="submit" value="Save" />
+                <input type="submit" value="Guardar" />
             </p>
         </fieldset>
 
