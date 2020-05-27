@@ -6,6 +6,7 @@
 <head runat="server">
     <title>Cuso Tema</title>
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="../../Content/normalize.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="editor-label" style="color: #FFFFFF">

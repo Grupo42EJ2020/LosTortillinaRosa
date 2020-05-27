@@ -12,13 +12,13 @@
         <div class="editor-label" style="color: #FFFFFF">
     <fieldset>
         <legend color="white" style="color: #FFFFFF">Detalles</legend>
-        
+           
         <div class="display-label" style="color: #FFFFFF">idCTV</div>
         <div class="display-field"><%: Model.idCTV %></div>
-        
+           <br />
         <div class="display-label" style="color: #FFFFFF">idCT</div>
         <div class="display-field"><%: Model.idCT %></div>
-        
+           <br />
         <div class="display-label" style="color: #FFFFFF">idVideo</div>
         <div class="display-field"><%: Model.idVideo %></div>
         

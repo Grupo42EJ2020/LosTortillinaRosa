@@ -103,6 +103,7 @@
     <Content Include="Content\normalize.css" />
     <Content Include="Content\Pruebas.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\Social.css" />
     <Content Include="Content\StyleSheet1.css" />
     <Content Include="Content\StyleSheet2.css" />
     <Content Include="Global.asax" />

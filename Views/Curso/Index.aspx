@@ -5,8 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Curso</title>
-      <link href="../../Content/StyleSheet1.css" rel="stylesheet" type="text/css" />
+     
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/normalize.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="editor-label" style="color: #FFFFFF">

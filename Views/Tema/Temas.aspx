@@ -7,6 +7,7 @@
     <title>Temas</title>
     <link href="../../Content/StyleSheet1.css" rel="stylesheet" type="text/css" />
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/normalize.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
    <div class="editor-label" style="color: #FFFFFF">

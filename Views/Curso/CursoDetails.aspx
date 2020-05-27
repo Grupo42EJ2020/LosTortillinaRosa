@@ -15,10 +15,10 @@
         
         <div class="display-label">idCurso</div>
         <div class="display-field"><%: Model.idCurso %></div>
-        
-        <div class="display-label">descripcion</div>
+           <br />
+        <div class="display-label">Descripcion</div>
         <div class="display-field"><%: Model.descripcion %></div>
-        
+           <br />
         <div class="display-label">idEmpleado</div>
         <div class="display-field"><%: Model.idEmpleado %></div>
         

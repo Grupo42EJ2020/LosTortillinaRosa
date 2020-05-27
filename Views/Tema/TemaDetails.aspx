@@ -13,9 +13,9 @@
 <fieldset>
         <legend>Datos</legend>
         
-        <div class="display-label">IdTema</div>
+        <div class="display-label">IdTema:</div>
         <div class="display-field"><%: Model.IdTema%></div>
-        
+           <br />
         <div class="display-label">Nombre</div>
         <div class="display-field"><%: Model.Nombre %></div>
         

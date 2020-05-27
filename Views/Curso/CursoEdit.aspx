@@ -17,7 +17,7 @@
             <legend>Datos</legend>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.descripcion) %>
+              Descripcion 
             </div>
             <div class="editor-field">
                 <%: Html.TextBoxFor(model => model.descripcion) %>
