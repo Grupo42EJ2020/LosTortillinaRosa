@@ -98,11 +98,14 @@
     <Compile Include="Utilerias\BaseHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\fondo-oscuro-superpuesto-capa-brillos-plateados-luz-azul_9111-745.jpg" />
     <Content Include="Content\main.css" />
     <Content Include="Content\normalize.css" />
+    <Content Include="Content\Pruebas.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\StyleSheet1.css" />
     <Content Include="Content\StyleSheet2.css" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\main.js" />
     <Content Include="Views\Curso\CursoCreate.aspx" />
     <Content Include="Views\Curso\CursoDelete.aspx" />
@@ -125,6 +128,7 @@
     <Content Include="Views\Empleado\EmpleadoEdit.aspx" />
     <Content Include="Views\Empleado\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Home\Prueba.aspx" />
     <Content Include="Views\Tema\TemaCreate.aspx" />
     <Content Include="Views\Tema\TemaDelete.aspx" />
     <Content Include="Views\Tema\TemaDetails.aspx" />

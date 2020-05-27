@@ -15,7 +15,7 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
-        public ActionResult Carga()
+        public ActionResult Prueba()
         {
             return View();
         }
