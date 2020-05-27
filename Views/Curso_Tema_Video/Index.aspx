@@ -8,6 +8,7 @@
      <link href="../../Content/StyleSheet1.css" rel="stylesheet" type="text/css" />
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
        <link href="../../Content/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/Social.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="editor-label" style="color: #FFFFFF">
@@ -57,29 +58,20 @@
         <%: Html.ActionLink("Agregar", "CursoTemaVideoCreate")%>
           <%: Html.ActionLink("Regresar", "Index","Home")%>
     </p>
-
+    </br>
     <div>
   <ul> 
     <li>
-      <a href="#">
+      <a href="https://www.facebook.com/juan.mata.16121471">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
         <span class="fa fa-facebook"></span>
       </a> 
-    </li>
+    </li> 
     <li>
-      <a href="#">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="fa fa-twitter"></span>
-      </a> 
-    </li>
-    <li>
-      <a href="#">
+      <a href="https://www.instagram.com/juaanmata/?hl=es-la">
         <span></span>
         <span></span>
         <span></span>
@@ -87,18 +79,8 @@
         <span class="fa fa-instagram"></span>
       </a> 
     </li>
-    <li>
-      <a href="#">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="fa fa-linkedin"></span>
-      </a> 
-    </li>
-  </ul>  
-
-
+  </ul>       
+        </div>
 
 </body>
 </html>
