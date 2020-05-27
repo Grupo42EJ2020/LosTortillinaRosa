@@ -6,8 +6,14 @@
 <head runat="server">
     <title>Empleado</title>
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+   
 </head>
 <body>
+<div class="editor-label" style="color: #FFFFFF">
+    <center>
+        <h1>Empleados</h1> 
+    </center>
+</div>
      <table>
         <tr>
             <th></th>
@@ -43,5 +49,6 @@
         <%: Html.ActionLink("Agregar Nuevo Empleado", "EmpleadoCreate") %>
              <%: Html.ActionLink("Regresar", "Index","Home")%>
     </p>
+    
 </body>
 </html>

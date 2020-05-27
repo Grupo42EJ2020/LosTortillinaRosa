@@ -5,9 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Curso Borrar</title>
-     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+   <link href="../../Content/StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<div class="editor-label" style="color: #FFFFFF">
     <h3>Estas seguro de borrar la siguiente informacion?</h3>
     <fieldset>
         <legend>Datos</legend>
@@ -24,11 +26,11 @@
     </fieldset>
     <% using (Html.BeginForm()) { %>
         <p>
-		    <input type="submit" value="Borrar" /> |
+		    <input type="submit" value="Borrar" class="button" /> |
 		    <%: Html.ActionLink("Regresar", "Index") %>
         </p>
     <% } %>
-
+</div>
 </body>
 </html>
 

@@ -5,8 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Tema Borrar</title>
+    <link href="../../Content/StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
+ <div class="editor-label" style="color: #FFFFFF">
     <h3>¿Esta seguro de eliminar la siguiente información?</h3>
     <fieldset>
         <legend>Datos del Tema</legend>
@@ -20,9 +24,10 @@
     </fieldset>
     <% using (Html.BeginForm()) { %>
         <p>
-		    <input type="submit" value="Borrar" /> |
+		    <input type="submit" value="Borrar" class="button" /> |
 		    <%: Html.ActionLink("Regresar a la lista de Temas", "Temas") %>
         </p>
     <% } %>
+    </div>
 </body>
 </html>

@@ -6,9 +6,10 @@
 <head runat="server">
     <title>Curso Agregar</title>
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/StyleSheet1.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-
+<div class="editor-label" style="color: #FFFFFF">
     <% using (Html.BeginForm()) {%>
         <%: Html.ValidationSummary(true) %>
 
@@ -41,7 +42,7 @@
     <div>
         <%: Html.ActionLink("Regresar", "Index") %>
     </div>
-
+    </div>
 </body>
 </html>
 

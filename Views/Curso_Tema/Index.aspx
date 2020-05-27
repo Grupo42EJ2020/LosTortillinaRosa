@@ -8,8 +8,10 @@
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h1>Curso Tema</h1>
-    <br />
+<div class="editor-label" style="color: #FFFFFF">
+            <center><h1>Curso Tema</h1>
+            </center>
+</div>
     <table>
         <tr>
             <th></th>

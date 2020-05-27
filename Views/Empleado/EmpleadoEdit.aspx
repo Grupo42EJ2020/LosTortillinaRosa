@@ -8,6 +8,7 @@
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<div class="editor-label" style="color: #FFFFFF">
     <% using (Html.BeginForm()) {%>
         <%: Html.ValidationSummary(true) %>
         
@@ -31,7 +32,7 @@
             </div>
             
             <p>
-                <input type="submit" class="button" value="Guardar" />
+                <input type="submit" class="button" value="Guardar" class="button" />
             </p>
         </fieldset>
 
@@ -39,6 +40,7 @@
 
     <div>
         <%: Html.ActionLink("Regresar", "Index") %>
+    </div>
     </div>
 </body>
 </html>

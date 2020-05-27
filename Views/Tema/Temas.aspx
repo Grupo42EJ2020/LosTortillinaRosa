@@ -9,6 +9,10 @@
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+   <div class="editor-label" style="color: #FFFFFF">
+            <center><h1>Temas</h1>
+            </center>
+</div>>  
     <table>
         <tr>
             <th></th>
@@ -42,6 +46,7 @@
 
     <p>
         <%: Html.ActionLink("Nuevo Tema", "TemaCreate")%>  
+       <%: Html.ActionLink("Regresar", "Index","Home")%>
     </p>
 </body>
 </html>

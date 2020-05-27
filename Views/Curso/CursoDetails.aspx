@@ -5,9 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Curso Detalles</title>
-     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+       <link href="../../Content/StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<div class="editor-label" style="color: #FFFFFF">
     <fieldset>
         <legend>Informacion</legend>
         
@@ -25,7 +27,7 @@
         <%: Html.ActionLink("Editar", "CursoEdit", new {  id=Model.idCurso}) %> |
         <%: Html.ActionLink("Regresar", "Index") %>
     </p>
-
+</div>
 </body>
 </html>
 

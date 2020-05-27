@@ -36,9 +36,7 @@ display-label,display-field
     color:White;
     
 }    
-    
-        
-a:link, a:visited 
+a:link, a:visited ,.button
 {
     text-decoration:none;
   padding: 0 16px;
@@ -58,13 +56,13 @@ a:link, a:visited
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-a:hover, a:focus {
+a:hover, a:focus , .button:hover, .button:focus{
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
     0 4px 5px 0 rgba(0, 0, 0, 0.14),
     0 1px 10px 0 rgba(0, 0, 0, 0.12);
   background-color: #159090;
 }
-a:active {
+a:active,.button:active {
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
     0 8px 10px 1px rgba(0, 0, 0, 0.14),
     0 3px 14px 2px rgba(0, 0, 0, 0.12);

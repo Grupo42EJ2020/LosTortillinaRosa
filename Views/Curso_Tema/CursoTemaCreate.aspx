@@ -5,9 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Curso Tema Agregar</title>
-    <link href="../../Content/Pruebas.css" rel="stylesheet" type="text/css" />
+   <link href="../../Content/StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<div class="editor-label" style="color: #FFFFFF">
     <% using (Html.BeginForm()) {%>
         <%: Html.ValidationSummary(true) %>
 
@@ -34,7 +36,7 @@
             </div>
            
             <p>
-                <input type="submit" class="button" value="Agregar" />
+                <input type="submit" class="button" value="Agregar"  class="button"/>
             </p>
 		</div>   
     <% } %>
@@ -42,7 +44,7 @@
     <div>
         <%: Html.ActionLink("Regresar", "Index") %>
     </div>
-
+</div>  
 </body>
 </html>
 

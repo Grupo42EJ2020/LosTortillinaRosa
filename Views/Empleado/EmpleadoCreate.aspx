@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Empleado Agregar</title>
+     <link href="../../Content/StyleSheet1.css" rel="stylesheet" type="text/css" />
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -12,8 +13,9 @@
         <%: Html.ValidationSummary(true) %>
 
         <fieldset>
+        <div class="editor-label" style="color: #FFFFFF">
             <legend>Datos del Empleado</legend>
-            
+           </div> 
             <div class="editor-label">
                 <%: Html.LabelFor(model => model.Nombre) %>
             </div>
@@ -31,7 +33,7 @@
             </div>
             
             <p>
-                <input type="submit" class="button" value="Agregar" />
+                <input type="submit" class="button" value="Agregar" class="button"/>
             </p>
         </fieldset>
 
