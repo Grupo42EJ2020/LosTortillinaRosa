@@ -59,7 +59,7 @@
           <%: Html.ActionLink("Regresar", "Index","Home")%>
     </p>
     <center>
-        <h1>Contacto
+        <h1>Contacto del creador
         </h1>
     <div>
   <ul> 
