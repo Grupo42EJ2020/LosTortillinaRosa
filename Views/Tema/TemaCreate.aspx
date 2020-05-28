@@ -18,15 +18,8 @@
         <%: Html.ValidationSummary(true) %>
 
         <fieldset>
-            <legend> Informacion</legend>
-            
-            <div class="editor-label">
-                <%: Html.LabelFor(model => model.IdTema) %>
-            </div>
-            <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.IdTema) %>
-                <%: Html.ValidationMessageFor(model => model.IdTema) %>
-            </div>
+            <legend> Informacion</legend>        
+          
             
             <div class="editor-label">
                 <%: Html.LabelFor(model => model.Nombre) %>
@@ -37,7 +30,7 @@
             </div>
             
             <p>
-                <input type="submit" value="Create" class="button" />
+                <input type="submit" value="Agregar" class="button" />
             </p>
         </fieldset>
 

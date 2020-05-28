@@ -8,9 +8,9 @@ namespace MVCLaboratorio.Models
     public interface ITema
     {
         List<Tema> obtenerTema();
-        Tema obtenerTema(int IdTema);
+        Tema obtenerTema(int id);
         void insertarTema(Tema datosTema);
-        void eliminarTema(int IdTema);
+        void eliminarTema(int id);
         void actualizarTema(Tema datosTema);
     }
 }

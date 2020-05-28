@@ -34,11 +34,11 @@ namespace MVCLaboratorio.Models
         }
 
 
-        public Tema obtenerTema(int idTema)
+        public Tema obtenerTema(int id)
         {
             DataTable dtTema;
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdTema", idTema));
+            parametros.Add(new SqlParameter("@IdTema", id));
 
             dtTema = BaseHelper.ejecutarConsulta("sp_Tema_ConsultarPorID", CommandType.StoredProcedure, parametros);
 
@@ -67,12 +67,11 @@ namespace MVCLaboratorio.Models
         }
 
 
-        public void eliminarTema(int IdTema)
+        public void eliminarTema(int id)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdTema", IdTema));
-
-            BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
+            parametros.Add(new SqlParameter("@IdTema", id));
+            BaseHelper.ejecutarSentencia("sp_Tema_Eliminar", CommandType.StoredProcedure, parametros);
 
         }
 
@@ -83,7 +82,7 @@ namespace MVCLaboratorio.Models
             parametros.Add(new SqlParameter("@IdTema", datosTema.IdTema));
             parametros.Add(new SqlParameter("@Nombre", datosTema.Nombre));
 
-            BaseHelper.ejecutarConsulta("sp_Video_Actualizar", CommandType.StoredProcedure, parametros);
+            BaseHelper.ejecutarConsulta("sp_Tema_Actualizar", CommandType.StoredProcedure, parametros);
 
         }
     }
