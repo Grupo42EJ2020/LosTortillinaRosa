@@ -7,6 +7,12 @@
     <title>Empleado</title>
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
        <link href="../../Content/normalize.css" rel="stylesheet" type="text/css" />
+        <meta charset="UTF-8"></meta>
+  <meta name="description" content="ASP.NET MVC 2 CRUD Video"></meta>
+  <meta name="keywords" content="ASP.NET, MVC, Facpya"></meta>
+  <meta name="author" content="Erick Medellin Camarillo"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <link href="../../Content/Social.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="editor-label" style="color: #FFFFFF">
