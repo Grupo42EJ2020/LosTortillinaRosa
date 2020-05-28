@@ -18,34 +18,39 @@ namespace MVCLaboratorio.Controllers
         }
 
         //Metodo para borrar un video
-        public ActionResult Delete(int id)
+        public ActionResult VideoDelete(int id)
         {
             //obtener los datos del video para mostrarlo al usuario antes de borrarlo
             return View(repoVideo.obtenerVideo(id));
         }
 
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection datos)
+        public ActionResult VideoDelete(int id, FormCollection datos)
         {
-            //realizar el delete del registro
-            repoVideo.eliminarVideo(id);
-
-            return RedirectToAction("Index");
+            if (repoVideo.obtenerDependenciaVideo(id) == 1)
+            {
+                return RedirectToAction("ErrorDependencia","Tema");
+            }
+            else
+            {
+                repoVideo.eliminarVideo(id);
+                return RedirectToAction("Index");
+            }
         }
 
-        public ActionResult Details(int id)
+        public ActionResult VideoDetails(int id)
         {
             return View(repoVideo.obtenerVideo(id));
         }
 
-        public ActionResult Edit(int id)
+        public ActionResult VideoEdit(int id)
         {
             return View(repoVideo.obtenerVideo(id));
         }
 
 
         [HttpPost]
-        public ActionResult Edit(int id, Video datosVideo)
+        public ActionResult VideoEdit(int id, Video datosVideo)
         {
             datosVideo.IdVideo = id;
             repoVideo.actualizarVideo(datosVideo);
@@ -53,7 +58,7 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Create()
+        public ActionResult VideoCreate()
         {
 
             //mostrar interfaz para llenado
@@ -61,7 +66,7 @@ namespace MVCLaboratorio.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(Video datos)
+        public ActionResult VideoCreate(Video datos)
         {
             repoVideo.insertarVideo(datos);
             return RedirectToAction("Index");

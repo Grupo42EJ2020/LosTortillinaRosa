@@ -96,5 +96,25 @@ namespace MVCLaboratorio.Models
             BaseHelper.ejecutarConsulta("sp_Video_Actualizar", CommandType.StoredProcedure, parametros);
 
         }
+
+        public int obtenerDependenciaVideo(int id)
+        {
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+
+            dtVideo = BaseHelper.ejecutarConsulta("sp_VideoDependencia", CommandType.StoredProcedure, parametros);
+
+            if (dtVideo.Rows.Count > 0) //si lo encontro
+            {
+                return 1;
+            }
+            else
+            { //no lo encontro 
+                return 0;
+            }
+        }
+
+
     }
 }

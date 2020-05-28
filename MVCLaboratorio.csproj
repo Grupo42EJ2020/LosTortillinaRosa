@@ -135,6 +135,11 @@
     <Content Include="Views\Tema\TemaDetails.aspx" />
     <Content Include="Views\Tema\TemaEdit.aspx" />
     <Content Include="Views\Tema\Temas.aspx" />
+    <Content Include="Views\Video\Index.aspx" />
+    <Content Include="Views\Video\VideoCreate.aspx" />
+    <Content Include="Views\Video\VideoDelete.aspx" />
+    <Content Include="Views\Video\VideoDetails.aspx" />
+    <Content Include="Views\Video\VideoEdit.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
