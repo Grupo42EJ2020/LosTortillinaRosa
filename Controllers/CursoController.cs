@@ -29,9 +29,15 @@ namespace MVCLaboratorio.Controllers
         [HttpPost]
         public ActionResult CursoDelete(int id, FormCollection datos)
         {
-            //realizar el delete del registro
-            repoCurso.eliminarCurso(id);
-            return RedirectToAction("Index");
+            if (repoCurso.obtenerDependenciaCurso(id) == 1)
+            {
+                return RedirectToAction("ErrorDependencia", "Tema");
+            }
+            else
+            {
+                repoCurso.eliminarCurso(id);
+                return RedirectToAction("index");
+            }  
         }
 
         public ActionResult CursoDetails(int id)

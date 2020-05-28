@@ -12,5 +12,6 @@ namespace MVCLaboratorio.Models
         void insertarTema(Tema datosTema);
         void eliminarTema(int id);
         void actualizarTema(Tema datosTema);
+        int obtenerDependenciaTema(int id);
     }
 }

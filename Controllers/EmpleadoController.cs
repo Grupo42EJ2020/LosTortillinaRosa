@@ -54,10 +54,15 @@ namespace MVCLaboratorio.Controllers
         [HttpPost]
         public ActionResult EmpleadoDelete(int id, FormCollection datos)
         {
-            //realizar el delete del registro
-            repoEmpleado.eliminarEmpleado(id);
-
-            return RedirectToAction("Index");
+            if (repoEmpleado.obtenerDependenciaEmpleado(id) == 1)
+            {
+                return RedirectToAction("ErrorDependencia", "Tema");
+            }
+            else
+            {
+                repoEmpleado.eliminarEmpleado(id);
+                return RedirectToAction("index");
+            }   
         }
 
         //Metodo para ingresar un nuevo empleado

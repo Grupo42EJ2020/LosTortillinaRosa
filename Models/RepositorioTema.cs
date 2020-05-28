@@ -70,8 +70,8 @@ namespace MVCLaboratorio.Models
         public void eliminarTema(int id)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdTema", id));
-            BaseHelper.ejecutarSentencia("sp_Tema_Eliminar", CommandType.StoredProcedure, parametros);
+            parametros.Add(new SqlParameter("@IdTema", id));         
+            BaseHelper.ejecutarSentencia("sp_Tema_Eliminar", CommandType.StoredProcedure, parametros);  
 
         }
 
@@ -85,5 +85,26 @@ namespace MVCLaboratorio.Models
             BaseHelper.ejecutarConsulta("sp_Tema_Actualizar", CommandType.StoredProcedure, parametros);
 
         }
+
+        public int obtenerDependenciaTema(int id)
+        {
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdTema", id));
+
+            dtVideo = BaseHelper.ejecutarConsulta("sp_TemaDependencia", CommandType.StoredProcedure, parametros);
+
+            if (dtVideo.Rows.Count > 0) //si lo encontro
+            {                
+                return 1;
+            }
+            else
+            { //no lo encontro 
+                return 0;
+            }
+        }
+
+
+
     }
 }

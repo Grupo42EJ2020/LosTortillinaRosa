@@ -88,6 +88,23 @@ namespace MVCLaboratorio.Models
             BaseHelper.ejecutarConsulta("sp_Empleado_Actualizar", CommandType.StoredProcedure, parametros);
 
         }
+        public int obtenerDependenciaEmpleado(int id)
+        {
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdEmpledo", id));
 
+            dtVideo = BaseHelper.ejecutarConsulta("sp_EmpleadoDependencia", CommandType.StoredProcedure, parametros);
+
+         
+            if (dtVideo.Rows.Count > 0) //si lo encontro
+            {
+                return 1;
+            }
+            else
+            { //no lo encontro 
+                return 0;
+            }
+        }
     }
 }
