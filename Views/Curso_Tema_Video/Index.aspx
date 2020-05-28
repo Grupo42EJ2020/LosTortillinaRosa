@@ -59,8 +59,8 @@
           <%: Html.ActionLink("Regresar", "Index","Home")%>
     </p>
     <center>
-        <h1 style="color: #FFFFFF">Contacto del creador
-        </h1>
+        <h2 style="color: #FFFFFF">Contacto del creador
+        </h2>
     <div>
         <center>
        
