@@ -12,7 +12,7 @@ body{
 }
  ul {
    position: relative;
-   display: flex;
+   display: inline;
    transform: rotate(-25deg) skew(25deg);
    transform-style: preserve-3d;
 }
