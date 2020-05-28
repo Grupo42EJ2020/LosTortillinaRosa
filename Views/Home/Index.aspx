@@ -32,7 +32,8 @@
 		<li><a href="/Curso_Tema/Index">Curso Tema</a></li>
         <li> <a href="/Tema/Temas">Tema</a></li>
         <li> <a href="/Empleado/Index">Empleados</a></li>   
-        <li><a href="/Curso/Index">Curso</a></li>       
+        <li><a href="/Curso/Index">Curso</a></li>
+        <li><a href="/Home/Prueba">Prueba</a></li>  
 	</ul>
   </div>
  </div>
