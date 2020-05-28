@@ -59,9 +59,11 @@
           <%: Html.ActionLink("Regresar", "Index","Home")%>
     </p>
     <center>
-        <h1>Contacto del creador
+        <h1 style="color: #FFFFFF">Contacto del creador
         </h1>
     <div>
+        <center>
+       
   <ul> 
     <li>
       <a href="https://www.facebook.com/juan.mata.16121471">
@@ -81,7 +83,8 @@
         <span class="fa fa-instagram"></span>
       </a> 
     </li>
-  </ul>       
+  </ul>  
+   </center>     
         </div>
  </center>  
 </body>
