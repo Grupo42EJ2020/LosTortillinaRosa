@@ -17,14 +17,9 @@
 <div class="editor-label" style="color: #FFFFFF">
     <% using (Html.BeginForm()) {%>
         <%: Html.ValidationSummary(true) %>
+<fieldset>
+            <legend>Datos</legend>
 
-         <div class="body"></div>
-		<div class="grad"></div>
-		<div class="header">
-			<div>Informacion Curso Tema<span>.</span></div>
-		</div>
-		<br>
-		<div class="login">
 			<div class="editor-label">
                 <%: Html.LabelFor(model => model.idCurso) %>
             </div>
@@ -41,11 +36,11 @@
             </div>
            
             <p>
-                <input type="submit" class="button" value="Agregar"  class="button"/>
+                <input type="submit" class="button" value="Agregar"  />
             </p>
 		</div>   
     <% } %>
-
+           </fieldset>
     <div>
         <%: Html.ActionLink("Regresar", "Index") %>
     </div>

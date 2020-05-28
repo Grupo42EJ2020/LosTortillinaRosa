@@ -44,7 +44,7 @@
     <% } %>
 
     <div>
-        <%: Html.ActionLink("Regresar", "Index") %>
+        <%: Html.ActionLink("Regresar", "Temas") %>
     </div>
     </div>
 </body>
