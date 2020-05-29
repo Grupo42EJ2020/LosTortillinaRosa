@@ -13,14 +13,15 @@
     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+
      <% using (Html.BeginForm()) {%>
         <%: Html.ValidationSummary(true) %>
 
-        <fieldset>
-        <div class="editor-label" style="color: #FFFFFF">
-            <legend>Datos del Empleado</legend>
+       <fieldset>
+      
+            <legend style="color: #FFFFFF">Datos del Empleado</legend>
            </div> 
-            <div class="editor-label">
+            <div class="editor-label" style="color: #FFFFFF">
                 <%: Html.LabelFor(model => model.Nombre) %>
             </div>
             <div class="editor-field">
@@ -28,18 +29,18 @@
                 <%: Html.ValidationMessageFor(model => model.Nombre) %>
             </div>
             
-            <div class="editor-label">
+            <div class="editor-label" style="color: #FFFFFF">
                 <%: Html.LabelFor(model => model.Direccion) %>
             </div>
             <div class="editor-field">
                 <%: Html.TextBoxFor(model => model.Direccion) %>
                 <%: Html.ValidationMessageFor(model => model.Direccion) %>
             </div>
-            
+        </fieldset>
             <p>
                 <input type="submit" class="button" value="Agregar" class="button"/>
             </p>
-        </fieldset>
+
 
     <% } %>
 
